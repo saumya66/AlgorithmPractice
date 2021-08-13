@@ -6,7 +6,6 @@ int LinearSearch(int arr[], int arrSize, int searchElement) {
 		if (arr[i] == searchElement) {
 			return i;
 		}
-
 	}
 	return -1;
 }
@@ -24,6 +23,8 @@ int main()
 	}
 	cout << "Enter the Search element";
 	cin >> searchElement;
+
+
 	int position = LinearSearch(arr, arrSize, searchElement);
 	if (position == -1) {
 		cout << "The element is not present";
@@ -31,6 +32,4 @@ int main()
 		cout << "The element is found at position : " << position + 1;
 	}
 	return 0;
-
-
 }
